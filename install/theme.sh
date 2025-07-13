@@ -19,7 +19,6 @@ ln -snf ~/.config/romarchy/current/backgrounds/1-Pawel-Czerwinski-Abstract-Purpl
 
 # Set specific app links for current theme
 ln -snf ~/.config/romarchy/current/theme/wofi.css ~/.config/wofi/style.css
-ln -snf ~/.config/romarchy/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
 mkdir -p ~/.config/btop/themes
 ln -snf ~/.config/romarchy/current/theme/btop.theme ~/.config/btop/themes/current.theme
 mkdir -p ~/.config/mako
