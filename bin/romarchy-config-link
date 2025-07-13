@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Link all the key config files to romarchy's internal versions for quicker testing
+ln -nsf ~/.local/share/romarchy/config/hypr/hyprland.conf ~/.config/hypr/
+ln -nsf ~/.local/share/romarchy/config/hypr/hypridle.conf ~/.config/hypr/
+ln -nsf ~/.local/share/romarchy/config/hypr/hyprlock.conf ~/.config/hypr/
+ln -nsf ~/.local/share/romarchy/config/waybar/config ~/.config/waybar/
+ln -nsf ~/.local/share/romarchy/config/wofi/config ~/.config/wofi/

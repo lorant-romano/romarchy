@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if gum confirm "Refresh Waybar config? This will replace your current Waybar settings with Romarchy defaults."; then
+  # Overwrite local waybar settings with the latest in Romarchy
+  cp -f ~/.local/share/romarchy/config/waybar/config ~/.config/waybar/ 2>/dev/null
+  cp -f ~/.local/share/romarchy/config/waybar/style.css ~/.config/waybar/ 2>/dev/null
+
+  # Restart waybar
+  pkill waybar &>/dev/null
+  setsid waybar &>/dev/null &
+fi

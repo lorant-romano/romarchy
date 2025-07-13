@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=Romarchy
+Description=Romarchy splash screen.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/romarchy
+ScriptFile=/usr/share/plymouth/themes/romarchy/romarchy.script
+ConsoleLogBackgroundColor=0x1a1b26

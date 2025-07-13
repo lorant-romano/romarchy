@@ -75,12 +75,12 @@ if ! command -v plymouth &>/dev/null; then
     # Relying on mkinitcpio to assemble a UKI
     # https://wiki.archlinux.org/title/Unified_kernel_image
     if ! grep -q splash /etc/cmdline.d/*.conf; then
-        # Need splash, create the omarchy file
-        echo "splash" | sudo tee -a /etc/cmdline.d/omarchy.conf
+        # Need splash, create the romarchy file
+        echo "splash" | sudo tee -a /etc/cmdline.d/romarchy.conf
     fi
     if ! grep -q quiet /etc/cmdline.d/*.conf; then
-        # Need quiet, create or append the omarchy file
-        echo "quiet" | sudo tee -a /etc/cmdline.d/omarchy.conf
+        # Need quiet, create or append the romarchy file
+        echo "quiet" | sudo tee -a /etc/cmdline.d/romarchy.conf
     fi
   elif [ -f "/etc/kernel/cmdline" ]; then
     # Alternate UKI kernel cmdline location
@@ -115,7 +115,7 @@ if ! command -v plymouth &>/dev/null; then
   fi
 
   # Copy and set the Plymouth theme
-  sudo cp -r "$HOME/.local/share/omarchy/default/plymouth" /usr/share/plymouth/themes/omarchy/
+  sudo cp -r "$HOME/.local/share/romarchy/default/plymouth" /usr/share/plymouth/themes/romarchy/
 
-  sudo plymouth-set-default-theme -R omarchy
+  sudo plymouth-set-default-theme -R romarchy
 fi

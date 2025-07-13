@@ -1,11 +1,10 @@
-if [ -z "$OMARCHY_BARE" ]; then
+if [ -z "$ROMARCHY_BARE" ]; then
   yay -S --noconfirm --needed \
     gnome-calculator \
-    signal-desktop spotify dropbox-cli zoom \
-    obsidian-bin typora libreoffice obs-studio kdenlive \
+    zoom obsidian-bin typora obs-studio \
     1password-beta 1password-cli gnome-keyring \
-    pinta xournalpp localsend-bin
+    xournalpp localsend-bin
 fi
 
-# Copy over Omarchy applications
-source ~/.local/share/omarchy/bin/omarchy-sync-applications || true
+# Copy over Romarchy applications
+source ~/.local/share/romarchy/bin/romarchy-sync-applications || true
