@@ -1,6 +1,6 @@
 if [ -z "$ROMARCHY_BARE" ]; then
   source ~/.local/share/romarchy/default/bash/functions
-  web2app "Apple Music" https://music.apple.com https://cdn.jsdelivr.net/gh/dashboard-icons/png/apple-music.png
+  web2app "Apple Music" https://music.apple.com/ https://cdn.jsdelivr.net/gh/dashboard-icons/png/apple-music.png
   web2app "WhatsApp" https://web.whatsapp.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/whatsapp.png
   web2app "Google Photos" https://photos.google.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-photos.png
   web2app "Google Contacts" https://contacts.google.com/ https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/google-contacts.png
